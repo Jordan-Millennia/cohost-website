@@ -3,21 +3,36 @@
 @theme {
   --color-cream: #F8F6F1;
   --color-charcoal: #1A1A1A;
-  --color-brass: #C9A84C;
-  --color-brass-light: #D4B65E;
-  --color-brass-dark: #B8943F;
+  --color-gold: #D4A843;
+  --color-gold-light: #E0BC5A;
+  --color-gold-dark: #B8932A;
   --color-dark: #0D0D0D;
 
   --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
   --font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
-
-  --animate-marquee: marquee 35s linear infinite;
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+.animate-in {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
 
 html {
   scroll-behavior: smooth;
@@ -29,6 +44,6 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-brass);
+  background-color: var(--color-gold);
   color: var(--color-dark);
 }

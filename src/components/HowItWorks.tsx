@@ -1,5 +1,3 @@
-import ScrollReveal from "./ScrollReveal";
-
 const steps = [
   {
     number: "01",
@@ -24,17 +22,15 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section className="py-24 lg:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <ScrollReveal>
-          <div className="text-center max-w-2xl mx-auto">
-            <span className="text-xs uppercase tracking-[0.2em] text-brass font-semibold">
-              How It Works
-            </span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl font-bold text-charcoal tracking-tight">
-              Three Steps to Passive Income
-            </h2>
-          </div>
-        </ScrollReveal>
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="animate-in text-center max-w-2xl mx-auto">
+          <span className="text-xs uppercase tracking-[0.2em] text-gold-dark font-semibold">
+            How It Works
+          </span>
+          <h2 className="mt-4 font-display text-4xl sm:text-5xl font-bold text-charcoal tracking-tight">
+            Three Steps to Passive Income
+          </h2>
+        </div>
 
         <div className="mt-16 relative">
           {/* Connecting line */}
@@ -42,21 +38,22 @@ export default function HowItWorks() {
 
           <div className="grid lg:grid-cols-3 gap-12 lg:gap-8">
             {steps.map((step, i) => (
-              <ScrollReveal key={step.number} delay={i * 150}>
-                <div className="text-center lg:px-6">
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-cream mb-6 relative z-10">
-                    <span className="font-display text-2xl font-bold text-brass">
-                      {step.number}
-                    </span>
-                  </div>
-                  <h3 className="font-display text-xl sm:text-2xl font-bold text-charcoal">
-                    {step.title}
-                  </h3>
-                  <p className="mt-3 text-charcoal/45 leading-relaxed max-w-sm mx-auto">
-                    {step.description}
-                  </p>
+              <div
+                key={step.number}
+                className={`animate-in delay-${(i + 1) * 100} text-center lg:px-6`}
+              >
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-cream mb-6 relative z-10">
+                  <span className="font-display text-2xl font-bold text-gold">
+                    {step.number}
+                  </span>
                 </div>
-              </ScrollReveal>
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-charcoal">
+                  {step.title}
+                </h3>
+                <p className="mt-3 text-charcoal/45 leading-relaxed max-w-sm mx-auto">
+                  {step.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>

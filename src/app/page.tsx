@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import StatBar from "@/components/StatBar";
 import SocialProof from "@/components/SocialProof";
 import Services from "@/components/Services";
 import WhyCoHost from "@/components/WhyCoHost";
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <StatBar />
       <SocialProof />
       <Services />
       <WhyCoHost />
