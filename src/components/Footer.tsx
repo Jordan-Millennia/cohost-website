@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <img
-                src="/logo.png"
+                src="/cohost-website/logo.png"
                 alt="CoHost"
                 className="h-8 w-8 rounded-lg"
                 width={32}
