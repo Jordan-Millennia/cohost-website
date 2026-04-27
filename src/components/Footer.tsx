@@ -63,8 +63,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-white/40">
               <li>
-                <a href="mailto:info@cohostmanagement.com" className="hover:text-white/70 transition-colors">
-                  info@cohostmanagement.com
+                <a href="mailto:info@cohostmgmt.net" className="hover:text-white/70 transition-colors">
+                  info@cohostmgmt.net
                 </a>
               </li>
               <li>United States</li>

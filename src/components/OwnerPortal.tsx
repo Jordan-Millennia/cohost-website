@@ -63,7 +63,7 @@ export default function OwnerPortal() {
                 </div>
                 <div className="flex-1 mx-4">
                   <div className="bg-white rounded-md px-4 py-1.5 text-xs text-charcoal/40 text-center border border-charcoal/[0.06]">
-                    portal.cohostmanagement.com
+                    portal.cohostmgmt.net
                   </div>
                 </div>
               </div>
