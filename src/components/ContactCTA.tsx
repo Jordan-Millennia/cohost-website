@@ -11,12 +11,15 @@ export default function ContactCTA() {
     <section id="contact" className="py-24 lg:py-32 bg-cream">
       <div className="max-w-3xl mx-auto px-6">
         <div className="animate-in text-center">
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal tracking-tight leading-[1.1]">
-            Ready to turn your property
-            <br className="hidden sm:block" /> into a performing asset?
+          <span className="text-xs uppercase tracking-[0.2em] text-gold-dark font-semibold">
+            Ready to Start
+          </span>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal tracking-tight leading-[1.1]">
+            Find Out What Your Property
+            <br className="hidden sm:block" /> Could Actually Earn.
           </h2>
           <p className="mt-4 text-charcoal/50 text-lg">
-            Get a free property analysis — no commitment, no setup fees.
+            Free analysis. No commitment. No setup fees.
           </p>
         </div>
 
@@ -53,22 +56,19 @@ export default function ContactCTA() {
                 <input type="text" name="name" placeholder="Full Name" required className={inputClass} />
                 <input type="email" name="email" placeholder="Email Address" required className={inputClass} />
               </div>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <input type="tel" name="phone" placeholder="Phone Number" className={inputClass} />
-                <select name="properties" required className={`${inputClass} text-charcoal/60`}>
-                  <option value="">Number of Properties</option>
-                  <option value="1-3">1-3 Properties</option>
-                  <option value="4-10">4-10 Properties</option>
-                  <option value="11-20">11-20 Properties</option>
-                  <option value="20+">20+ Properties</option>
-                </select>
-              </div>
+              <select name="properties" required className={`${inputClass} text-charcoal/60`}>
+                <option value="">Number of Properties</option>
+                <option value="1-3">1-3 Properties</option>
+                <option value="4-10">4-10 Properties</option>
+                <option value="11-20">11-20 Properties</option>
+                <option value="20+">20+ Properties</option>
+              </select>
               <input type="text" name="market" placeholder="Primary Market (City, State)" className={inputClass} />
               <button
                 type="submit"
                 className="w-full bg-gold hover:bg-gold-light text-dark py-4 rounded-lg font-semibold text-base transition-colors cursor-pointer mt-2"
               >
-                Get Free Analysis
+                Run My Free Analysis
               </button>
             </form>
           )}
